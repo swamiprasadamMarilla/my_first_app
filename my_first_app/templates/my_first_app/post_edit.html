@@ -1,0 +1,9 @@
+{% extends 'my_first_app/base.html' %}
+
+{% block content %}
+<h2>New Post</h2>
+<form method="POST" class="POST-FORM">{% csrf_token %}
+{{ form.as_p }}
+<button type="submit">SAVE</button>
+</form>
+{% endblock %}
